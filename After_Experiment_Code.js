@@ -21,33 +21,34 @@ weiterButton.addEventListener('click', function() {
 document.getElementById('dropdownMenuDivider')?.style?.setProperty('display', 'none');
 
 const videolist = [
-    { videoURL: window.empraConfig.video1,
-  originalIndex: 1,
-  videoName: "videoA_033",
-  duration: null },
-    { videoURL: "https://fernuni-hagen.sciebo.de/s/aXSBmt2Tj9Jb2Ya/download", originalIndex: 2, videoName: "videoA_050", duration: null },
-    { videoURL: "https://fernuni-hagen.sciebo.de/s/N8FBqwrfwetptTt/download", originalIndex: 3, videoName: "videoA_100", duration: null },
-    { videoURL: "https://fernuni-hagen.sciebo.de/s/9XWjmH5oSfaYHZ9/download", originalIndex: 4, videoName: "videoA_200", duration: null },
-    { videoURL: "https://fernuni-hagen.sciebo.de/s/DKnQKrNod7NzMbF/download", originalIndex: 5, videoName: "videoA_300", duration: null },
-    { videoURL: "https://fernuni-hagen.sciebo.de/s/niBXcwrA6xPC3Yw/download", originalIndex: 6, videoName: "videoB_033", duration: null },
-    { videoURL: "https://fernuni-hagen.sciebo.de/s/R5FPjiafipXbt4E/download", originalIndex: 7, videoName: "videoB_050", duration: null },
-    { videoURL: "https://fernuni-hagen.sciebo.de/s/7DEwNQqMd3odHzF/download", originalIndex: 8, videoName: "videoB_100", duration: null },
-    { videoURL: "https://fernuni-hagen.sciebo.de/s/9cgLefsZQKFRMjS/download", originalIndex: 9, videoName: "videoB_200", duration: null },
-    { videoURL: "https://fernuni-hagen.sciebo.de/s/KYRMEWMz2ms2xMS/download", originalIndex: 10, videoName: "videoB_300", duration: null },
-    { videoURL: "https://fernuni-hagen.sciebo.de/s/8QZPcfBpjPJZMzC/download", originalIndex: 11, videoName: "videoC_033", duration: null },
-    { videoURL: "https://fernuni-hagen.sciebo.de/s/D9iTdeB8NSFBMt4/download", originalIndex: 12, videoName: "videoC_050", duration: null },
-    { videoURL: "https://fernuni-hagen.sciebo.de/s/EMrrgC7DmqG5HAD/download", originalIndex: 13, videoName: "videoC_100", duration: null },
-    { videoURL: "https://fernuni-hagen.sciebo.de/s/zfZXTX4ewt67wS8/download", originalIndex: 14, videoName: "videoC_200", duration: null },
-    { videoURL: "https://fernuni-hagen.sciebo.de/s/dRSFJRFpwW6Y7eW/download", originalIndex: 15, videoName: "videoC_300", duration: null },
-    { videoURL: "https://fernuni-hagen.sciebo.de/s/zsabG9jCrKY3oi2/download", originalIndex: 16, videoName: "videoD_033", duration: null },
-    { videoURL: "https://fernuni-hagen.sciebo.de/s/tqXJHmB9D6izGQ9/download", originalIndex: 17, videoName: "videoD_050", duration: null },
-    { videoURL: "https://fernuni-hagen.sciebo.de/s/P4GyiNfDsXCpbaQ/download", originalIndex: 18, videoName: "videoD_100", duration: null },
-    { videoURL: "https://fernuni-hagen.sciebo.de/s/tosCjQmi5DpcG4o/download", originalIndex: 19, videoName: "videoD_200", duration: null },
-    { videoURL: "https://fernuni-hagen.sciebo.de/s/wL6K5bF2F3BDZSc/download", originalIndex: 20, videoName: "videoD_300", duration: null },
-    { videoURL: "https://fernuni-hagen.sciebo.de/s/kagZBt7XrpFJAxw/download", originalIndex: 21, videoName: "videoA_still", duration: null },
-    { videoURL: "https://fernuni-hagen.sciebo.de/s/MkiJW5xAWFW787d/download", originalIndex: 22, videoName: "videoB_still", duration: null },
-    { videoURL: "https://fernuni-hagen.sciebo.de/s/mKJgoNDXPjcgDD6/download", originalIndex: 23, videoName: "videoC_still", duration: null },
-    { videoURL: "https://fernuni-hagen.sciebo.de/s/KsfHbjQnJqwofXr/download", originalIndex: 24, videoName: "videoD_still", duration: null }
+  { videoURL: window.empraConfig.video1,  originalIndex: 1,  videoName: "videoA_033", duration: null },
+  { videoURL: window.empraConfig.video2,  originalIndex: 2,  videoName: "videoA_050", duration: null },
+  { videoURL: window.empraConfig.video3,  originalIndex: 3,  videoName: "videoA_100", duration: null },
+  { videoURL: window.empraConfig.video4,  originalIndex: 4,  videoName: "videoA_200", duration: null },
+  { videoURL: window.empraConfig.video5,  originalIndex: 5,  videoName: "videoA_300", duration: null },
+
+  { videoURL: window.empraConfig.video6,  originalIndex: 6,  videoName: "videoB_033", duration: null },
+  { videoURL: window.empraConfig.video7,  originalIndex: 7,  videoName: "videoB_050", duration: null },
+  { videoURL: window.empraConfig.video8,  originalIndex: 8,  videoName: "videoB_100", duration: null },
+  { videoURL: window.empraConfig.video9,  originalIndex: 9,  videoName: "videoB_200", duration: null },
+  { videoURL: window.empraConfig.video10, originalIndex: 10, videoName: "videoB_300", duration: null },
+
+  { videoURL: window.empraConfig.video11, originalIndex: 11, videoName: "videoC_033", duration: null },
+  { videoURL: window.empraConfig.video12, originalIndex: 12, videoName: "videoC_050", duration: null },
+  { videoURL: window.empraConfig.video13, originalIndex: 13, videoName: "videoC_100", duration: null },
+  { videoURL: window.empraConfig.video14, originalIndex: 14, videoName: "videoC_200", duration: null },
+  { videoURL: window.empraConfig.video15, originalIndex: 15, videoName: "videoC_300", duration: null },
+
+  { videoURL: window.empraConfig.video16, originalIndex: 16, videoName: "videoD_033", duration: null },
+  { videoURL: window.empraConfig.video17, originalIndex: 17, videoName: "videoD_050", duration: null },
+  { videoURL: window.empraConfig.video18, originalIndex: 18, videoName: "videoD_100", duration: null },
+  { videoURL: window.empraConfig.video19, originalIndex: 19, videoName: "videoD_200", duration: null },
+  { videoURL: window.empraConfig.video20, originalIndex: 20, videoName: "videoD_300", duration: null },
+
+  { videoURL: window.empraConfig.video21, originalIndex: 21, videoName: "videoA_still", duration: null },
+  { videoURL: window.empraConfig.video22, originalIndex: 22, videoName: "videoB_still", duration: null },
+  { videoURL: window.empraConfig.video23, originalIndex: 23, videoName: "videoC_still", duration: null },
+  { videoURL: window.empraConfig.video24, originalIndex: 24, videoName: "videoD_still", duration: null }
 ];
 
 function valuesOfKey(dict, key) {
