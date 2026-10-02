@@ -21,7 +21,10 @@ weiterButton.addEventListener('click', function() {
 document.getElementById('dropdownMenuDivider')?.style?.setProperty('display', 'none');
 
 const videolist = [
-    { videoURL: "https://fernuni-hagen.sciebo.de/s/3wssEmNsbkT9SzK/download", originalIndex: 1, videoName: "videoA_033", duration: null },
+    { videoURL: window.empraConfig.video1,
+  originalIndex: 1,
+  videoName: "videoA_033",
+  duration: null },
     { videoURL: "https://fernuni-hagen.sciebo.de/s/aXSBmt2Tj9Jb2Ya/download", originalIndex: 2, videoName: "videoA_050", duration: null },
     { videoURL: "https://fernuni-hagen.sciebo.de/s/N8FBqwrfwetptTt/download", originalIndex: 3, videoName: "videoA_100", duration: null },
     { videoURL: "https://fernuni-hagen.sciebo.de/s/9XWjmH5oSfaYHZ9/download", originalIndex: 4, videoName: "videoA_200", duration: null },
