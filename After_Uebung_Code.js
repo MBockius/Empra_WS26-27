@@ -40,8 +40,11 @@ let experimentActive = true;
 let currentVideoEndedHandler = null;
 let measurementStartTimeout = null;
 
-const exercise2VideoUrl = 'https://fernuni-hagen.sciebo.de/s/nRV15DpZcTs8DrY/download';
-const exercise3VideoUrl = 'https://fernuni-hagen.sciebo.de/s/31DHAH2cVItybIb/download';
+const exercise2VideoUrl =
+    window.empraConfig.exercise2VideoUrl;
+
+const exercise3VideoUrl =
+    window.empraConfig.exercise3VideoUrl;
 
 // Border Elements
 var frameTop = document.createElement("div");
