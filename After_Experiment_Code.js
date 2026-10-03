@@ -14,9 +14,7 @@ trialFrame.style.alignItems = "center";
 const weiterButton = document.getElementById("SurveySubmitButtonElement");
 weiterButton.style.display = 'none';
 
-weiterButton.addEventListener('click', function() {
-    $('form').submit();
-});
+
 
 document.getElementById('dropdownMenuDivider')?.style?.setProperty('display', 'none');
 
