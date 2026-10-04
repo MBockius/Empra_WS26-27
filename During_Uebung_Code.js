@@ -1,6 +1,6 @@
 
 (() => {
-// Apply Custom CSS
+
 document.body.classList.add('custom-styles');
 
 // Define Trial Frame
