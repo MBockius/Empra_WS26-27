@@ -1,4 +1,5 @@
 (() => {
+  // 
 document.body.classList.add('custom-styles');
 const trialFrame = document.getElementById("trial_frame");
 trialFrame.style.top = '0';
