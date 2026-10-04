@@ -1,3 +1,4 @@
+(() => {
 document.body.classList.add('custom-styles');
 
 const trialFrame = document.getElementById("trial_frame");
@@ -549,3 +550,4 @@ function loadNewVideo() {
 }
 
 loadNewVideo();
+})();
