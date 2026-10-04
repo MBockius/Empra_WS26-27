@@ -1,5 +1,5 @@
-/******** CONFIG ********/
 
+(() => {
 // Apply Custom CSS
 document.body.classList.add('custom-styles');
 
@@ -645,3 +645,4 @@ document.addEventListener("keyup", function(event) { // Globaler Handler für Lo
 /******** START ********/
 
 experiment(stepCounter);
+})();
